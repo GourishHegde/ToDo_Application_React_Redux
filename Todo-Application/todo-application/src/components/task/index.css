@@ -1,0 +1,10 @@
+/* CSS Style to format DELETE button.*/
+.button {
+  color: rgba(73, 204, 249, 1.0);
+    border-color: rgba(73, 204, 249, 1.0);
+    background-color: transparent;
+}
+/* CSS Style to add space between the table cells. */
+td {
+    padding: 10px;
+}
