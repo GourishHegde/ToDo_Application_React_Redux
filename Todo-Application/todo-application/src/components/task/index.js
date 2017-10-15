@@ -4,18 +4,18 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import './index.css';
 import deleteTask from  '../../actions/';
-// importing dateformat package to display date.
+//importing dateformat package to display date.
 var dateFormat = require('dateformat');
 var now = new Date();
 // Class Definition for displaying task list.
 class Task extends React.Component{
   render(){
     return(
-        <tr cellSpacing="14">
-          <td cellSpacing="14">
+        <tr>
+          <td bgcolor="#FFD700">
             {dateFormat(now, "dd/mm/yy")}
           </td>
-          <td cellSpacing="14">
+          <td bgcolor="#00FF00">
             {this.props.task}
           </td>
           <td>

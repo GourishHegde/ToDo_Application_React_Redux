@@ -19,13 +19,12 @@ const addTask=(task)=>{
   render(){
     return(
       <div>
-          <input type="text" ref="task" placeholder="Type Your Tasks Here"/>
+          <input type="text" name="todo" id="Taskinput" ref="task" placeholder="Please Type Your Tasks Here"/>
           <button className="btn-primary" onClick={()=>this.props.addTask(this.refs.task.value)}>SUBMIT</button>
       </div>
     );
   }
-  };
-
+};
   function mapDispatchToProps(dispatch) {
     return bindActionCreators({addTask}, dispatch);
   };
